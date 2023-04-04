@@ -18,7 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+/* 
+*    Since our index.scss file is being imported into our components, all h1 and p tags will be affected by this
+*   as long as our file is added as an import
+*/
 p {
   font-size: 1.6rem;
 }
@@ -35,6 +38,8 @@ h1{
   color: white;
 }
 
+/* The before psuedo element, allows you to add content before a class element
+In this case .app, without having to add markup to the html */
 .app:before {
   content: '';
   background: url('../assets/bg.jpg');
